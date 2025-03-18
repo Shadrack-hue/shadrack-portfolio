@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadrack's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Eng Shadrack Favour</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    
+    <section id="about" class="slide-in">
+        <h2>About Me</h2>
+        <p>He's an Electrical Engineer with expertise in Embedded Systems, Power Electronics, and FPGA-based projects.</p>
+    </section>
+    
+    <section id="projects" class="slide-in">
+        <h2>Projects</h2>
+        <ul>
+            <li>Embedded Systems Design</li>
+            <li>Power Electronics Project</li>
+            <li>FPGA-based Projects</li>
+        </ul>
+    </section>
+    
+    <section id="blog" class="slide-in">
+        <h2>Blog</h2>
+        <p>Stay tuned for my latest blog posts.</p>
+    </section>
+    
+    <section id="contact" class="slide-in">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shadracfavour44@gmail.com">shadracfavour44@gmail.com</a></p>
+        <p>YouTube: <a href="https://youtube.com/@shadrachfavour">Shadrack Favour</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shadrack-favour-80b284289">Shadrack Favour</a></p>
+    </section>
+</body>
+</html>

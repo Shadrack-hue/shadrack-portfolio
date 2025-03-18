@@ -1,0 +1,33 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    // Load dark mode preference
+    if (localStorage.getItem("dark-mode") === "enabled") {
+        body.classList.add("dark-mode");
+    }
+
+    darkModeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("dark-mode", "enabled");
+        } else {
+            localStorage.setItem("dark-mode", "disabled");
+        }
+    });
+
+    // Animate elements on scroll
+    const slideIns = document.querySelectorAll(".slide-in");
+    const fadeIns = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    slideIns.forEach(el => observer.observe(el));
+    fadeIns.forEach(el => observer.observe(el));
+});
